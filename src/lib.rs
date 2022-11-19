@@ -20,3 +20,7 @@ pub trait Pipe<InT, OutT>: Source<OutT> {
     /// return a reference to the input source
     fn get_input(&self) -> Option<Rc<dyn Source<InT>>>;
 }
+
+/// data_bucket
+/// Sub module holding the definitions of the data model for the library
+pub mod data_bucket;
